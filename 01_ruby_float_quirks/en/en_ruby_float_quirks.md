@@ -1,11 +1,11 @@
 Ruby Float quirks
 =================
 
-|         |
-|:--------|:-----------------------------------------------------------------
-| Author: | Clemens Helm <clemens@rails-troubles.com>
-| Date:   | January 10, 2012
-| URI:    | [http://www.rails-troubles.com/2011/12/ruby-float-quirks.html][0]
+| Project   | Entooru
+|:----------|:-----------------------------------------------------------------
+| Author:   | Clemens Helm <clemens@rails-troubles.com>
+| Date:     | January 10, 2012
+| URI:      | [http://www.rails-troubles.com/2011/12/ruby-float-quirks.html][0]
 
 Working with Float values sometimes really leads to unexpected behavior. Take
 the following example:

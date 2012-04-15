@@ -1,6 +1,7 @@
 Ruby Float quirks
 =================
 
+|         |
 |:--------|:-----------------------------------------------------------------
 | Author: | Clemens Helm <clemens@rails-troubles.com>
 | Date:   | January 10, 2012

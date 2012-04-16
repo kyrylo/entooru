@@ -19,7 +19,7 @@ end
 ```
 
 You would expect this method to return `false` all the time. But try calling
-`greater_than_sum(214.04, 74.79)` and it will return `true`!
+`greater_than_sum?(214.04, 74.79)` and it will return `true`!
 
 The problem
 -----------

@@ -77,9 +77,9 @@ one of these two paths: either learning from older developers’ experience, or
 following trends blindly. Guess which way is easier, and sadly more common.
 
 We seriously need to **read a fucking ton more** and take advantage of the expertise
-of older developers. We just can’t live anymore with the old **threads suck,
+of older developers. We just can’t live anymore with the old _threads suck,
 reactor pattern will save the world, or processes suck, threads will save the
-world, or multithreading is hard, processes will save the world**. Any of these
+world, or multithreading is hard, processes will save the world_. Any of these
 might be partially true, but religiously sticking to one of those is just
 stupid. Try out things yourself, talk to other people, consider different use
 cases for every one of them: HELL, it’s just such a simple pattern to compare

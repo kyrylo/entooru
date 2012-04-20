@@ -46,10 +46,10 @@ namespace :blog do
     title = File.open(post_bak, &:readline).chomp
 
     scriptogram_header =<<-TEXT
-  ---
-  Date: #{$1}
-  Title: #{title}
-  ---
+---
+Date: #{$1}
+Title: #{title}
+---
 
     TEXT
 

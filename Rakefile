@@ -11,7 +11,14 @@ namespace :blog do
     dropbox_articles = get_articles(POSTS_PATH)
     new_articles     = repo_articles - dropbox_articles
 
-    new_articles.each { |article| convert_to_web(article) }
+    unless new_articles.empty?
+      new_articles.each do |article|
+        puts "\e[1;32mAdding\e[1m \e[0;33m#{article}\e[0m..."
+        convert_to_web(article)
+      end
+
+      puts "\n\e[0;32mNew articles have been added!\e[0m"
+    end
   end
 
   # Retrieve all articles in the given path.

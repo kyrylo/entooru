@@ -1,4 +1,4 @@
-![Энту́ру][logo]
+[![Энту́ру][logo]](http://scriptogr.am/entooru/)
 ===============
 
 * [Идеология проекта][ideology]
@@ -6,6 +6,8 @@
 * [Ответы на вопросы][faq]
 * [Рекомендации по переводу][guidelines]
 * [Шаблон статьи для перевода][template]
+
+А блог тут: [http://scriptogr.am/entooru/][scrp]
 
 О чем всё это?
 --------------
@@ -56,7 +58,9 @@
            изображений. Если содержит, то просто ставьте прямые ссылки на
            изображения из статьи.
 
-4. Сделайте необходиые коммиты и отправьте [пулл реквест][pr].
+4. Сделайте необходимые коммиты и отправьте [пулл реквест][pr]. После проверки
+   перевода он будет добавлен в общий блог, который расположен по адресу:
+   [http://scriptogr.am/entooru/][scrp]. Обновление блога производится вручную.
 5. Настоятельно рекомендуется уведомить автора статьи о переводе и дать ему
    ссылку на этот самый перевод. Возможно, он пожелает сообщить своих читателей
    о переводе.
@@ -69,11 +73,12 @@
 <kyrylosilin@gmail.com>, если вопрос не является публичным.
 
 [logo]: http://img-fotki.yandex.ru/get/6106/98991937.8/0_75903_4d48f97b_orig "Энту́ру"
-[ideology]: https://github.com/kyrylo/entooru/wiki/%D0%98%D0%B4%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-%D0%AD%D0%BD%D1%82%D1%83%CC%81%D1%80%D1%83
-[tools]: https://github.com/kyrylo/entooru/wiki/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA%D0%B0
-[faq]: https://github.com/kyrylo/entooru/wiki/%D0%9E%D1%82%D0%B2%D0%B5%D1%82%D1%8B-%D0%BD%D0%B0-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B
-[guidelines]: https://github.com/kyrylo/entooru/wiki/%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%83
-[template]: https://github.com/kyrylo/entooru/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B0
-[iss]: https://github.com/kyrylo/entooru/issues
+[ideology]: https://github.com/kyrylo/entooru/wiki/%D0%98%D0%B4%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-%D0%AD%D0%BD%D1%82%D1%83%CC%81%D1%80%D1%83/
+[tools]: https://github.com/kyrylo/entooru/wiki/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA%D0%B0/
+[faq]: https://github.com/kyrylo/entooru/wiki/%D0%9E%D1%82%D0%B2%D0%B5%D1%82%D1%8B-%D0%BD%D0%B0-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B/
+[guidelines]: https://github.com/kyrylo/entooru/wiki/%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%83/
+[template]: https://github.com/kyrylo/entooru/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B0/
+[iss]: https://github.com/kyrylo/entooru/issues/
 [pr]: http://help.github.com/send-pull-requests/
 [fork]: http://help.github.com/fork-a-repo/
+[scrp]: http://scriptogr.am/entooru/

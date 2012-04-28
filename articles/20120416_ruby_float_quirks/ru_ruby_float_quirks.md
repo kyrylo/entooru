@@ -19,6 +19,7 @@ def greater_than_sum?(float1, float2)
   difference + float2 > float1
 end
 ```
+
 Вы могли бы ожидать от этого метода постоянное возвращение `false`. Однако
 попытайтесь вызвать `greater_than_sum?(214.04, 74.79)` и он вернет `true`!
 

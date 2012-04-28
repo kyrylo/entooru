@@ -22,6 +22,26 @@ namespace :blog do
     end
   end
 
+  desc 'Update a specific article'
+  task :update do
+    title = ENV['POST']
+    unless title
+      raise ArgumentError, 'ArgumentError: no POST argument given'
+    end
+
+    article = get_articles('articles').find_all { |a| a.match title }
+
+    if article.size != 1
+      raise ArgumentError, "ArgumentError: ambiguous argument #{title}"
+    end
+
+    article = article[0]
+
+    puts "\e[1;32mUpdating\e[1m \e[0;33m#{ article }\e[0m..."
+    convert_for_web(article)
+    puts "\n\e[0;32m#{ article } has been added!\e[0m"
+  end
+
   # Retrieve all articles in the given path.
   #
   # path - Place, where your articles are stored.

@@ -30,25 +30,28 @@ namespace :blog do
     Dir["#{path}/*"].map { |article| File.basename(article, '.md') }
   end
 
-  # Convert file to Scriptogram format.
+  # Convert post to Scriptogram format.
   #
-  # file - File to convert.
+  # post_name - File to convert.
   #
   # Returns nothing.
-  def convert_for_web(file)
-    file.match(/^(\d+)(_.+)$/)
-    post = "#{POSTS_PATH}/#{file}.md"
+  def convert_for_web(post_name)
+    post_name.match(/^(\d+)(_.+)$/)
+    post = "#{POSTS_PATH}/#{post_name}.md"
+    post_en = File.join('articles', post_name, 'en', "en#{$2}.md")
     post_bak = "#{post}.bak"
 
-    FileUtils.cp("articles/#{file}/ru#{$2}.md", post)
+    FileUtils.cp("articles/#{post_name}/ru#{$2}.md", post)
     FileUtils.cp(post, post_bak)
 
     title = File.open(post_bak, &:readline).chomp
+    title_en = File.open(post_en, &:readline).downcase.gsub(/[^a-z0-9]+/i, '-').chomp('-')
 
     scriptogram_header =<<-TEXT
 ---
 Date: #{$1}
 Title: #{title}
+Slug: #{title_en}
 ---
 
     TEXT

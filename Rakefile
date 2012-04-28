@@ -14,7 +14,7 @@ namespace :blog do
     unless new_articles.empty?
       new_articles.each do |article|
         puts "\e[1;32mAdding\e[1m \e[0;33m#{article}\e[0m..."
-        convert_to_web(article)
+        convert_for_web(article)
       end
 
       puts "\n\e[0;32mNew articles have been added!\e[0m"
@@ -35,7 +35,7 @@ namespace :blog do
   # file - File to convert.
   #
   # Returns nothing.
-  def convert_to_web(file)
+  def convert_for_web(file)
     file.match(/^(\d+)(_.+)$/)
     post = "#{POSTS_PATH}/#{file}.md"
     post_bak = "#{post}.bak"

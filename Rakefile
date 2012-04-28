@@ -6,8 +6,8 @@ POSTS_PATH = File.expand_path('~/downloads/.DropboxEntooru/Dropbox/Apps/scriptog
 
 namespace :blog do
 
-  desc 'Update Scriptogram with new articles from Github repo'
-  task :update do
+  desc 'Add all new articles from Github repo to Scriptogram'
+  task :add do
     repo_articles    = get_articles('articles')
     dropbox_articles = get_articles(POSTS_PATH)
     new_articles     = repo_articles - dropbox_articles

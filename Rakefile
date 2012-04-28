@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'tempfile'
 
 # Path, where all Scriptogram articles are stored.
 POSTS_PATH = File.expand_path('~/downloads/.DropboxEntooru/Dropbox/Apps/scriptogram/posts')
@@ -13,7 +14,7 @@ namespace :blog do
 
     unless new_articles.empty?
       new_articles.each do |article|
-        puts "\e[1;32mAdding\e[1m \e[0;33m#{article}\e[0m..."
+        puts "\e[1;32mAdding\e[1m \e[0;33m#{ article }\e[0m..."
         convert_for_web(article)
       end
 
@@ -27,42 +28,64 @@ namespace :blog do
   #
   # Returns Array of articles in the directory.
   def get_articles(path)
-    Dir["#{path}/*"].map { |article| File.basename(article, '.md') }
+    Dir["#{ path }/*"].map { |article| File.basename(article, '.md') }
   end
 
-  # Convert post to Scriptogram format.
+  # Convert post to Scriptogram format. Prepends mandatory Scriptogram document
+  # header and converts code blocks from Github's flavored Markdown to classic
+  # variant.
   #
   # post_name - File to convert.
   #
   # Returns nothing.
   def convert_for_web(post_name)
     post_name.match(/^(\d+)(_.+)$/)
-    post = "#{POSTS_PATH}/#{post_name}.md"
-    post_en = File.join('articles', post_name, 'en', "en#{$2}.md")
-    post_bak = "#{post}.bak"
+    scriptogram_post = "#{ POSTS_PATH }/#{ post_name }.md"
+    post_ru = File.join('articles', post_name, "ru#{ $2 }.md")
+    post_en = File.join('articles', post_name, 'en', "en#{ $2 }.md")
 
-    FileUtils.cp("articles/#{post_name}/ru#{$2}.md", post)
-    FileUtils.cp(post, post_bak)
+    FileUtils.cp(post_ru, scriptogram_post)
 
-    title = File.open(post_bak, &:readline).chomp
-    title_en = File.open(post_en, &:readline).downcase.gsub(/[^a-z0-9]+/i, '-').chomp('-')
+    title_ru = File.open(post_ru) { |f| f.readline.chomp }
+    title_en = File.open(post_en) { |f| f.readline }
 
     scriptogram_header =<<-TEXT
 ---
-Date: #{$1}
-Title: #{title}
-Slug: #{title_en}
+Date: #{ $1 }
+Title: #{ title_ru }
+Slug: #{ $1 }-#{ urlify title_en }
 ---
 
     TEXT
 
-    File.open(post, 'w') do |file|
-      file.puts scriptogram_header
-      bak = File.open(post_bak).to_a[3..-1]
-      bak.each { |line| file.puts line }
+    File.open(scriptogram_post, 'w') do |sp|
+      code = false
+      sp.puts scriptogram_header
+      File.foreach(post_ru).to_a[3..-1].each do |ru|
+        if ru =~ /^```/
+          code = code ? false : true
+        elsif code
+          sp.puts '    ' + ru
+        else
+          sp.puts ru
+        end
+      end
     end
+  end
 
-    FileUtils.rm(post_bak)
+  # Convert string to URL format.
+  #
+  # str - The String to be converted.
+  #
+  # Examples
+  #
+  #   watchword = 'En Taro Adun!!!'
+  #   url = urlify watchword
+  #   # => 'en-taro-adun'
+  #
+  # Returns converted String, joined by hyphens.
+  def urlify(str)
+    str.downcase.gsub(/[^a-z0-9]+/i, '-').chomp('-')
   end
 
 end

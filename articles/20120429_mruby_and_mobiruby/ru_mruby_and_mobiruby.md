@@ -194,7 +194,7 @@ _Выводы_: Опираясь на всё это, когда МобиРуби
 [1]: http://youtu.be/sB-IifjyeLI "Часть 2"
 [2]: http://img-fotki.yandex.ru/get/4911/98991937.9/0_7640e_86148582_orig
 [3]: http://img-fotki.yandex.ru/get/9/98991937.9/0_7640d_d0bd2d30_orig
-[4]: http://en.wikipedia.org/wiki/Yukihiro_Matsumoto
+[4]: http://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%86%D1%83%D0%BC%D0%BE%D1%82%D0%BE,_%D0%AE%D0%BA%D0%B8%D1%85%D0%B8%D1%80%D0%BE
 [5]: https://github.com/mruby/mruby
 [6]: http://mobiruby.org/
 [7]: http://macruby.org/
@@ -203,7 +203,7 @@ _Выводы_: Опираясь на всё это, когда МобиРуби
 [10]: https://github.com/masuidrive
 [11]: http://www.appcelerator.com/
 [12]: http://www.appcelerator.com/platform/titanium-sdk
-[13]: http://www.apache.org/licenses/LICENSE-2.0.html
+[13]: http://www.dataved.ru/2011/03/apache-license-2.html
 [14]: http://news.ycombinator.com/item?id=3866418
 [15]: http://en.wikipedia.org/wiki/RubyCocoa
 [16]: http://www.amazon.com/gp/product/1449380379/ref=as_li_ss_tl?ie=UTF8&tag=merbist-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1449380379

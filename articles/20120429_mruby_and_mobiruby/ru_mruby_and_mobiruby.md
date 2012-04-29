@@ -190,7 +190,7 @@ _Выводы_: Опираясь на всё это, когда МобиРуби
 [0]: http://matt.aimonetti.net/posts/2012/04/20/mruby-and-mobiruby/
 [01]: http://youtu.be/n7XRYWclYDY "Часть 1"
 [1]: http://youtu.be/sB-IifjyeLI "Часть 2"
-[2]: http://img-fotki.yandex.ru/get/4911/98991937.9/0_7640e_86148582_orig
+[2]: http://img-fotki.yandex.ru/get/6209/98991937.9/0_7646a_3cae4786_orig
 [3]: http://img-fotki.yandex.ru/get/9/98991937.9/0_7640d_d0bd2d30_orig
 [4]: http://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%86%D1%83%D0%BC%D0%BE%D1%82%D0%BE,_%D0%AE%D0%BA%D0%B8%D1%85%D0%B8%D1%80%D0%BE
 [5]: https://github.com/mruby/mruby

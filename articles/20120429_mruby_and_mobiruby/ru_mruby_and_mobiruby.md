@@ -3,7 +3,7 @@
 
 | Проект:        | [Энту́ру](https://www.github.com/kyrylo/entooru/)
 |:---------------|:-----------------------------------------------------------------
-| Автор:         | Мэтт Аймонетти [@merbist][a]
+| Автор:         | Мэтт Аймонетти <mattaimonetti@gmail.com>
 | Дата:          | 20 апреля 2012 года
 | URI:           | [http://matt.aimonetti.net/posts/2012/04/20/mruby-and-mobiruby/][0]
 | Перевел:       | Кирилл Силин <kyrylosilin@gmail.com>
@@ -186,7 +186,6 @@ _Выводы_: Опираясь на всё это, когда МобиРуби
 коробки. Но время покажет и есть куда расти. Руби на АйОС/Андроиде — это что-то
 захватывающее, и я уже вижу себя в будущем, тестирующего первые беты.
 
-[a]: http://twitter.com/merbist
 [0]: http://matt.aimonetti.net/posts/2012/04/20/mruby-and-mobiruby/
 [01]: http://youtu.be/n7XRYWclYDY "Часть 1"
 [1]: http://youtu.be/sB-IifjyeLI "Часть 2"

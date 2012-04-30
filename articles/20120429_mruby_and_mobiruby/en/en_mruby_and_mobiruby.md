@@ -3,7 +3,7 @@ Mruby and MobiRuby
 
 | Project: | [Entooru](https://www.github.com/kyrylo/entooru/)
 |:---------|:-----------------------------------------------------------------
-| Author:  | Matt Aimonetti [@merbist][a]
+| Author:  | Matt Aimonetti <mattaimonetti@gmail.com>
 | Date:    | April 20, 2012
 | URI:     | [http://matt.aimonetti.net/posts/2012/04/20/mruby-and-mobiruby/][0]
 
@@ -176,7 +176,6 @@ concerned by the syntax and the performance we will get out of the box. But time
 will tell and things can always be improved. Ruby on iOS/Android is something
 exciting and I’m looking forward to testing the first betas.
 
-[a]: http://twitter.com/merbist
 [0]: http://matt.aimonetti.net/posts/2012/04/20/mruby-and-mobiruby/
 [1]: http://youtu.be/sB-IifjyeLI "Part 2"
 [2]: http://img-fotki.yandex.ru/get/4911/98991937.9/0_7640e_86148582_orig

@@ -29,7 +29,7 @@ namespace :blog do
       raise ArgumentError, 'ArgumentError: no POST argument given'
     end
 
-    article = get_articles('articles').find_all { |a| a.match title }
+    article = get_articles('articles').find_all { |a| a[title] }
 
     if article.size != 1
       raise ArgumentError, "ArgumentError: ambiguous argument #{title}"

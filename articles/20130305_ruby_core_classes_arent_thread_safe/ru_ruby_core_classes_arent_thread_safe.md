@@ -7,7 +7,7 @@
 | Дата:          | 25 февраля 2013 года
 | URI:           | [http://www.jstorimer.com/newsletter/ruby-core-classes-arent-thread-safe.html][0]
 | Перевел:       | Кирилл Силин <kyrylosilin@gmail.com>
-| Дата перевода: | 5 марта 2012 года
+| Дата перевода: | 5 марта 2013 года
 
 
 Несколько дней назад я поделился цитатой в Твиттере:
@@ -241,9 +241,7 @@ RBX 2.0.0rc1 :  0
 Если вы узнали о чём-то новом, или если у вас остались неотвеченные вопросы,
 дайте мне знать. Я всегда их читаю.
 
-До скорого,<br/>
-Джесси<br/>
-[http://workingwithcode.com][3]
+До скорого! Джесси [http://workingwithcode.com][3]
 
 [0]: http://www.jstorimer.com/newsletter/ruby-core-classes-arent-thread-safe.html
 [1]: https://github.com/jruby/jruby/wiki/Concurrency-in-jruby#wiki-concurrency_basics

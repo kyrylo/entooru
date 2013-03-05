@@ -4,7 +4,7 @@ Ruby core classes aren't thread safe
 | Project: | [Entooru](https://www.github.com/kyrylo/entooru/)
 |:---------|:-----------------------------------------------------------------
 | Author:  | Jesse Storimer <jesse@jstorimer.com>
-| Date:    | February 25, 2012
+| Date:    | February 25, 2013
 | URI:     | [http://www.jstorimer.com/newsletter/ruby-core-classes-arent-thread-safe.html][0]
 
 

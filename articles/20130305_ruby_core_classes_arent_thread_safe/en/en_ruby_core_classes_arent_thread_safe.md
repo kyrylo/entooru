@@ -228,8 +228,8 @@ If you learned something from this email, or it left you with more unanswered
 questions, hit reply and let me know. Replies go right to my personal inbox and
 I always answer them.
 
-Until next time,
-Jesse
+Until next time,<br/>
+Jesse<br/>
 [http://workingwithcode.com][3]
 
 [0]: http://www.jstorimer.com/newsletter/ruby-core-classes-arent-thread-safe.html

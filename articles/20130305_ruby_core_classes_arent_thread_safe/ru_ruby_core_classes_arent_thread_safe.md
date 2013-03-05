@@ -241,8 +241,8 @@ RBX 2.0.0rc1 :  0
 Если вы узнали о чём-то новом, или если у вас остались неотвеченные вопросы,
 дайте мне знать. Я всегда их читаю.
 
-До скорого,
-Джесси
+До скорого,<br/>
+Джесси<br/>
 [http://workingwithcode.com][3]
 
 [0]: http://www.jstorimer.com/newsletter/ruby-core-classes-arent-thread-safe.html

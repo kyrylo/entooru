@@ -141,9 +141,9 @@ but the order would be different. Can you guess the output and the ancestors?
 [Try it here][4].
 
 You can include and prepend as many modules as you want and modules can even be
-`include`d and `prepend`ed to other modules<a name="sub1-r"></a>
-<a href="#sub1">¹</a>. Don't hesitate to call `ancestors` to double check the
-hierarchy of modules & classes.
+`include`d and `prepend`ed to other modules<a name="sub1-r"></a><a href="#sub1">¹</a>.
+Don't hesitate to call `ancestors` to double check the hierarchy of modules &
+classes.
 
 Singleton classes
 -----------------
@@ -254,7 +254,7 @@ singleton methods.
 
 Just to be certain to confuse everybody, I'll finish with a note on `extend`. It
 can be seen as a shortcut to include a module in the singleton class of the
-receiver<a name="#sub3-r"></a><a href="#sub3">³</a>:
+receiver<a name="sub3-r"></a><a href="#sub3">³</a>:
 
 ```ruby
 obj.extend MyModule
@@ -319,8 +319,7 @@ The ancestors chain for a Module `mod` is:
 * the ancestors chain of each included module (last module included first)
 * if `mod` is a class, then the ancestors chain of its superclass.
 
-We can write the `ancestors` method in pseudo Ruby code<a href="#sub4-r"></a>
-<a href="#sub4">⁴</a>:
+We can write the `ancestors` method in pseudo Ruby code<a name="sub4-r"></a><a href="#sub4">⁴</a>:
 
 ```ruby
 class Module

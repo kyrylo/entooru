@@ -194,8 +194,7 @@ scooby.singleton_class.is_a?(Class) # => true
 scooby.singleton_class.instance_methods(false) # => [:make_noise]
 ```
 
-All Ruby objects can have singleton classes<a name="sub2-r"></a>
-<a href="#sub2">²</a>, including classes themselves and yes, even singleton classes.
+All Ruby objects can have singleton classes<a name="sub2-r"></a><a href="#sub2">²</a>, including classes themselves and yes, even singleton classes.
 
 This sounds a bit crazy... wouldn't that require an infinite number of singleton
 classes? In a way, yes, but Ruby will create singleton classes as they are

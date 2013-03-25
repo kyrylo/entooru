@@ -338,7 +338,7 @@ end
 Writing the actual lookup is more tricky, but it would look like:
 
 ```ruby
-class Object
+class BasicObject
   def send(method, *args)
     singleton_class.ancestors.each do |mod|
       if mod.defines? method
@@ -359,6 +359,10 @@ class Object
   end
 end
 ```
+
+Did you notice I never got back to this `Kernel` business? It is a module that
+is included in `Object`, that actually contains all the methods of `Object`. I
+hope to talk about the why in another article!
 
 Technical Footonotes
 --------------------

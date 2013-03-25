@@ -343,7 +343,7 @@ end
 Написание настоящего поиска запутанно слегка сильнее. Код бы выглядел так:
 
 ```ruby
-class Object
+class BasicObject
   def send(method, *args)
     singleton_class.ancestors.each do |mod|
       if mod.defines? method
@@ -364,6 +364,10 @@ class Object
   end
 end
 ```
+
+Кстати, вы ещё помните, что я собирался рассказать про `Kernel`? Это — модуль,
+который включён в `Object`, который содержит все методы `Object`. Я надеюсь, что
+расскажу что к чему в следующей статье!
 
 Технические сноски
 ------------------
